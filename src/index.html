@@ -16,7 +16,7 @@
     <title>
         Jovian Careers Page
     </title>
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="logo.png" type="image/x-icon" >
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,8 @@
     
 <body>
     <div id="navbar">
-        <img src="logo.png" height="30px">
+        <img id="logo" src="logo.png" height="30px">
+        <img id="logo_only" src="logo_only.png" height="30px">
     </div>
     <img id="banner" src="banner.jpg" alt="bannerImage">
     <h1>About Jovian</h1>
@@ -53,7 +54,7 @@
         </div>
 
         <div id="about-image">
-            <img src="team.jpg" alt="teamImage" width="100%">
+            <img id="team-image" src="team.jpg" alt="teamImage">
         </div>
     </div>
 
@@ -91,10 +92,11 @@
 
         </div>
 
-        <div id="application">
             <h2>
                 Submit Your Application
             </h2>
+        <div id="application">
+
             <form 
             id="application-form"
             action="https://formbold.com/s/9RmxG"
@@ -169,7 +171,7 @@
             <li><a href="#">Programs</a></li>
             <li><a href="#">YouTube</a></li>
         </ul>
-        <span>© 2023, Jovian</span>
+        <span style="text-align: center;">© 2023, Jovian</span>
     </div>
 </body>
 
