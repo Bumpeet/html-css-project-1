@@ -89,10 +89,36 @@ a:hover {
 }
 
 #jobs {
+    display:none
+}
+
+#jobs-list{
     max-width: 500px;
     margin: 0 auto;
     padding: 0 10px;
+    display: block;
+}
 
+.job-item{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    margin-top: 8px;
+    padding: 8px;
+    background-color:  #93c5fd;
+}
+
+.job-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #222222;
+}
+
+.job-detail{
+    margin-top: 4px;
+    color: #dddddd;
 }
 
 .location {
@@ -124,8 +150,8 @@ a:hover {
 
 #application {
     max-width: 500px;
-    /* margin: 0 auto; */
     padding: 0 10px;
+    margin: 0 auto;
 }
 
 .form-group {
@@ -138,7 +164,6 @@ select {
     font-size: 1.2rem;
     border-radius: 2px;
     border: 1px solid gray;
-    /* margin-top: 2px; */
     width: 100%;
     height: 30px;
 }
@@ -174,9 +199,8 @@ select {
 #footer {
     background-color: #93c5fd;
     text-align: center;
-    margin: 10px;
+    margin-top: 50px;
     border-radius: 3px;
-    color: ;
 }
 
 #footer-links {
@@ -212,6 +236,25 @@ select {
     h1 {
         margin: 12px;
     }
+
+    #jobs-list{
+        display: none;
+    }
+
+    #jobs{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 10px;
+        display: block;
+    }
+
+    #application {
+        max-width: 700px;
+    }
+    .form-group textarea{
+        width: 60%;
+    }
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -245,8 +288,9 @@ select {
         max-width: 800px;
         margin: 0 auto;
         padding: 0 10px;
-
     }
+
+  
 
     /* .location {
         color: gray;
